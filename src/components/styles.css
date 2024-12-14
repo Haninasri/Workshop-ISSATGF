@@ -1,0 +1,51 @@
+/* Keyframe animation for fading and sliding in */
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Applying animation and styling for the WelcomeCard */
+  .welcome-card {
+    animation: slideIn 1.2s ease-out;
+    background-color: #f5f5f5; /* Light background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .welcome-card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .card-media {
+    object-fit: contain;
+    max-height: 150px; /* Ensure the logo is proportionally sized */
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    color: #1976d2; /* Primary color for heading */
+  }
+  
+  h6 {
+    color: #424242; /* Dark gray for subheading */
+  }
+  
+  button {
+    background-color: #1976d2; /* Matching button color with the theme */
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1565c0; /* Darker blue on hover */
+  }
+  
